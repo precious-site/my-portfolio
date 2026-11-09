@@ -6,13 +6,14 @@ import { downloadResume } from '../utils/generateResume';
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full z-10 grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full z-10 grid md:grid-cols-2 gap-12 md:gap-8 items-center">
         
+        {/* Left Side - Text & CTA (Desktop & Tablet) */}
         <motion.div 
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col gap-6 order-2 lg:order-1"
+          className="flex flex-col gap-6 order-1"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-neon-purple/30 bg-neon-purple/5 backdrop-blur-md w-fit text-xs font-semibold tracking-wide uppercase text-neon-purple dark:text-neon-cyan shadow-[0_0_15px_rgba(139,92,246,0.15)]">
             <span className="w-2 h-2 rounded-full bg-neon-purple dark:bg-neon-cyan animate-pulse"></span>
@@ -40,13 +41,14 @@ const Hero = () => {
           </div>
         </motion.div>
 
+        {/* Right Side - Profile Image (Desktop & Tablet) */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="relative w-full flex justify-center items-center order-1 lg:order-2 mt-8 lg:mt-0"
+          className="relative w-full flex justify-center md:justify-end items-center order-2 mt-8 md:mt-0"
         >
-          <div className="relative w-64 h-64 md:w-[400px] md:h-[400px] animate-float">
+          <div className="relative w-64 h-64 md:w-[380px] md:h-[380px] animate-float">
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-neon-purple via-transparent to-neon-blue opacity-50 blur-xl animate-pulse-slow"></div>
             
             <div className="absolute inset-2 rounded-full p-1 bg-gradient-to-br from-white/40 to-white/5 backdrop-blur-sm z-10 border border-white/20 shadow-2xl overflow-hidden">
@@ -68,7 +70,7 @@ const Hero = () => {
             <motion.div 
               animate={{ y: [0, -15, 0] }} 
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -right-4 top-10 glass-card px-4 py-2 rounded-2xl flex items-center gap-2 z-20 border border-white/20 shadow-[0_0_15px_rgba(59,130,246,0.3)]"
+              className="absolute -right-2 top-10 glass-card px-4 py-2 rounded-2xl flex items-center gap-2 z-20 border border-white/20 shadow-[0_0_15px_rgba(59,130,246,0.3)]"
             >
               <div className="w-3 h-3 rounded-full bg-neon-blue animate-pulse"></div>
               <span className="text-sm font-bold text-gray-800 dark:text-white">React.js</span>
@@ -77,7 +79,7 @@ const Hero = () => {
             <motion.div 
               animate={{ y: [0, 15, 0] }} 
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute -left-8 bottom-20 glass-card px-4 py-2 rounded-2xl flex items-center gap-2 z-20 border border-white/20 shadow-[0_0_15px_rgba(16,185,129,0.3)]"
+              className="absolute -left-6 bottom-16 glass-card px-4 py-2 rounded-2xl flex items-center gap-2 z-20 border border-white/20 shadow-[0_0_15px_rgba(16,185,129,0.3)]"
             >
               <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
               <span className="text-sm font-bold text-gray-800 dark:text-white">Node.js</span>

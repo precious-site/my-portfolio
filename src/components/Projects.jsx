@@ -31,7 +31,7 @@ const Projects = () => {
           viewport={{ once: true }}
           className="mb-20"
         >
-          <h2 className="text-xs font-semibold tracking-widest uppercase text-gray-400 dark:text-gray-500 mb-4">Selected Case Studies</h2>
+          <h2 className="text-xs font-semibold tracking-widest uppercase text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple mb-4">Selected Case Studies</h2>
           <h3 className="font-display text-3xl md:text-4xl text-gray-900 dark:text-white">Curated Digital Experiences.</h3>
         </motion.div>
 
@@ -54,9 +54,9 @@ const Projects = () => {
               </div>
               
               <div className="w-full md:w-2/5 flex flex-col gap-6">
-                <div className="flex flex-wrap gap-2 mb-2">
+                <div className="flex flex-wrap gap-3 mb-2">
                   {project.tech.map((t, i) => (
-                    <span key={i} className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">{t}</span>
+                    <span key={i} className="text-xs font-semibold uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">{t}</span>
                   ))}
                 </div>
                 <h4 className="font-display text-2xl md:text-3xl text-gray-900 dark:text-white">{project.title}</h4>
@@ -64,7 +64,7 @@ const Projects = () => {
                   {project.description}
                 </p>
                 <div className="flex items-center gap-6 mt-4">
-                  <a href={project.liveLink} className="text-sm font-medium border-b border-gray-900 dark:border-white hover:text-primary hover:border-primary dark:hover:text-primary dark:hover:border-primary transition-colors flex items-center gap-2 pb-1">
+                  <a href={project.liveLink} className="text-sm font-medium border-b border-gray-900 dark:border-white hover:text-neon-blue hover:border-neon-blue dark:hover:text-neon-blue dark:hover:border-neon-blue transition-colors flex items-center gap-2 pb-1">
                     View Live <ExternalLink size={14} />
                   </a>
                   <a href={project.githubLink} className="text-sm font-medium text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors flex items-center gap-2">

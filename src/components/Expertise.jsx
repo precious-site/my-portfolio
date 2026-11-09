@@ -5,22 +5,22 @@ import { Code2, Database, Layout, Terminal } from 'lucide-react';
 const skills = [
   {
     category: "Frontend Engineering",
-    icon: <Layout className="w-6 h-6 mb-4 text-primary" />,
+    icon: <Layout className="w-6 h-6 mb-4 text-neon-blue" />,
     items: ["React.js & Hooks", "JavaScript (ES6+)", "Tailwind CSS", "HTML5 & CSS3", "Bootstrap", "Responsive Design"]
   },
   {
     category: "Backend Architecture",
-    icon: <Terminal className="w-6 h-6 mb-4 text-primary" />,
+    icon: <Terminal className="w-6 h-6 mb-4 text-neon-blue" />,
     items: ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication", "CRUD Operations", "API Integration"]
   },
   {
     category: "Database Management",
-    icon: <Database className="w-6 h-6 mb-4 text-primary" />,
+    icon: <Database className="w-6 h-6 mb-4 text-neon-blue" />,
     items: ["MongoDB", "Mongoose", "MySQL", "Data Modeling", "Query Optimization"]
   },
   {
     category: "Development Tools",
-    icon: <Code2 className="w-6 h-6 mb-4 text-primary" />,
+    icon: <Code2 className="w-6 h-6 mb-4 text-neon-blue" />,
     items: ["Git & GitHub", "VS Code", "Postman", "npm/Yarn", "Vercel Deployment"]
   }
 ];
@@ -35,7 +35,7 @@ const Expertise = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="text-xs font-semibold tracking-widest uppercase text-gray-400 dark:text-gray-500 mb-4">Technical Arsenal</h2>
+          <h2 className="text-xs font-semibold tracking-widest uppercase text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple mb-4">Technical Arsenal</h2>
           <h3 className="font-display text-3xl md:text-4xl text-gray-900 dark:text-white">Precision Tools & Technologies.</h3>
         </motion.div>
 

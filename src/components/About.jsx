@@ -13,7 +13,7 @@ const About = () => {
           className="grid md:grid-cols-12 gap-12"
         >
           <div className="md:col-span-4">
-            <h2 className="text-xs font-semibold tracking-widest uppercase text-gray-400 dark:text-gray-500 mb-4">Biography</h2>
+            <h2 className="text-xs font-semibold tracking-widest uppercase text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple mb-4">Biography</h2>
             <h3 className="font-display text-3xl md:text-4xl text-gray-900 dark:text-white">Effortless Sophistication in Code.</h3>
           </div>
           
