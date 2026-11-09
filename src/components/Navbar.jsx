@@ -22,11 +22,15 @@ const Navbar = ({ theme, toggleTheme }) => {
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'glass py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#" className="font-display font-semibold text-xl tracking-tight">AY.</a>
+        <a href="#" className="font-mono font-bold text-xl md:text-2xl tracking-tight text-gray-900 dark:text-white flex items-center gap-1 group">
+          <span className="text-neon-blue">&lt;</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">AY</span>
+          <span className="text-neon-purple">/&gt;</span>
+        </a>
         
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
+            <a key={link.name} href={link.href} className="text-gray-600 dark:text-gray-300 hover:text-neon-blue dark:hover:text-neon-blue transition-colors">
               {link.name}
             </a>
           ))}
