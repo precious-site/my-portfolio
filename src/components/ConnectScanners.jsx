@@ -21,10 +21,11 @@ const ConnectScanners = () => {
             <h3 className="text-sm font-bold tracking-widest uppercase text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple mb-2">
               Let's Connect
             </h3>
-            <h2 className="text-3xl md:text-4xl text-gray-900 dark:text-white font-bold">
+            {/* Forced white text for the dark gradient background */}
+            <h2 className="text-3xl md:text-4xl text-white font-bold">
               Scan to visit my profiles
             </h2>
-            <p className="text-gray-500 mt-2">Connect with me on LinkedIn or explore my code.</p>
+            <p className="text-gray-300 mt-2">Connect with me on LinkedIn or explore my code.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -40,9 +41,9 @@ const ConnectScanners = () => {
               <div className="flex flex-col items-center gap-2 z-10">
                 <div className="flex items-center gap-2">
                   <Linkedin className="text-neon-blue" size={24} />
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white tracking-wide uppercase">LinkedIn</h4>
+                  <h4 className="text-xl font-bold text-white tracking-wide uppercase">LinkedIn</h4>
                 </div>
-                <p className="text-sm text-gray-500 font-medium">Professional profile</p>
+                <p className="text-sm text-gray-400 font-medium">Professional profile</p>
               </div>
             </div>
 
@@ -57,15 +58,15 @@ const ConnectScanners = () => {
               <div className="flex flex-col items-center gap-2 z-10">
                 <div className="flex items-center gap-2">
                   <Github className="text-neon-purple" size={24} />
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white tracking-wide uppercase">GitHub</h4>
+                  <h4 className="text-xl font-bold text-white tracking-wide uppercase">GitHub</h4>
                 </div>
-                <p className="text-sm text-gray-500 font-medium">Projects & code</p>
+                <p className="text-sm text-gray-400 font-medium">Projects & code</p>
               </div>
             </div>
 
           </div>
 
-          <div className="mt-8 flex items-center justify-center gap-2 text-sm text-gray-500">
+          <div className="mt-8 flex items-center justify-center gap-2 text-sm text-gray-400">
             <Camera size={16} />
             <p>Tip: Scan with your phone camera</p>
           </div>

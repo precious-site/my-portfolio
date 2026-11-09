@@ -23,7 +23,7 @@ const Hero = () => {
             Abhishek <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">Kumar</span>
           </h1>
           <h2 className="text-2xl md:text-4xl font-medium text-gray-700 dark:text-gray-300">
-            Full Stack Developer
+            MERN Stack Developer
           </h2>
           
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed font-light">
@@ -47,10 +47,8 @@ const Hero = () => {
           className="relative w-full flex justify-center items-center order-1 lg:order-2 mt-8 lg:mt-0"
         >
           <div className="relative w-64 h-64 md:w-[400px] md:h-[400px] animate-float">
-            {/* Outer Glowing Ring */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-neon-purple via-transparent to-neon-blue opacity-50 blur-xl animate-pulse-slow"></div>
             
-            {/* Image Container */}
             <div className="absolute inset-2 rounded-full p-1 bg-gradient-to-br from-white/40 to-white/5 backdrop-blur-sm z-10 border border-white/20 shadow-2xl overflow-hidden">
               <img 
                 src="/profile.jpg" 
@@ -67,7 +65,6 @@ const Hero = () => {
               </div>
             </div>
             
-            {/* Floating Tech Badges */}
             <motion.div 
               animate={{ y: [0, -15, 0] }} 
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
