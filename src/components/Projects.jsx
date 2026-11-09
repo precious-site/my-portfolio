@@ -26,7 +26,20 @@ const Projects = () => {
     <section id="work" className="py-24 md:py-32 bg-white dark:bg-dark-bg">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.div 
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-20"
+        >
+          <h2 className="text-xs font-semibold tracking-widest uppercase text-gray-400 dark:text-gray-500 mb-4">Selected Case Studies</h2>
+          <h3 className="font-display text-3xl md:text-4xl text-gray-900 dark:text-white">Curated Digital Experiences.</h3>
+        </motion.div>
+
+        <div className="flex flex-col gap-24">
+          {projects.map((project, index) => (
+            <motion.div 
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
